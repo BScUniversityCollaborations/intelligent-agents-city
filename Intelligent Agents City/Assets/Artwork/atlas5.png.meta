@@ -1,37 +1,22 @@
 fileFormatVersion: 2
-guid: 64dc686498661e24c9ec5fd68d506953
+guid: 8c8bb5e760b827d409056ed37bed8b64
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -997972493423046422
-    second: npc_dead
+      213: 4954209753858812349
+    second: sea_1
   - first:
-      213: -199644854353079308
-    second: npc_1
+      213: -4847462059956113268
+    second: sea_2
   - first:
-      213: -217455086581007235
-    second: npc_2
+      213: 7791711462224280003
+    second: sea_3
   - first:
-      213: 4335250483284255847
-    second: npc_3
+      213: -1233942431064228490
+    second: sea_4
   - first:
-      213: -983156657889264743
-    second: npc_4
-  - first:
-      213: -2850093654693141264
-    second: pavement_!
-  - first:
-      213: 9093825842685103111
-    second: pavement_2
-  - first:
-      213: 3150387745278999259
-    second: npc_big_1
-  - first:
-      213: 3210994475073176143
-    second: npc_big_2
-  - first:
-      213: -6596105612730252187
-    second: npc_big_3
+      213: -5573898537342767962
+    second: sea_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -62,7 +47,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -121,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: npc_dead
+      name: sea_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 95
-        width: 16
-        height: 16
+        x: 3
+        y: 255
+        width: 43
+        height: 18
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -135,20 +120,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae098e10e4d7622f0800000000000000
-      internalID: -997972493423046422
+      spriteID: db9a789c583e0c440800000000000000
+      internalID: 4954209753858812349
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: npc_1
+      name: sea_2
       rect:
         serializedVersion: 2
-        x: 16
-        y: 80
-        width: 16
-        height: 15
+        x: 2
+        y: 226
+        width: 45
+        height: 10
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,83 +141,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f3dc0f0018ba3df0800000000000000
-      internalID: -199644854353079308
+      spriteID: c80f12e70fa5abcb0800000000000000
+      internalID: -4847462059956113268
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: npc_2
+      name: sea_3
       rect:
         serializedVersion: 2
-        x: 16
-        y: 64
-        width: 16
-        height: 16
+        x: 8
+        y: 255
+        width: 33
+        height: 18
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 3}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7cbcb930c17bfcf0800000000000000
-      internalID: -217455086581007235
+      spriteID: 3c9b73aea48b12c60800000000000000
+      internalID: 7791711462224280003
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: npc_3
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 96
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 764af7c6857e92c30800000000000000
-      internalID: 4335250483284255847
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: npc_4
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 99b33f78a302b52f0800000000000000
-      internalID: -983156657889264743
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pavement_!
+      name: sea_4
       rect:
         serializedVersion: 2
         x: 0
-        y: 224
-        width: 48
-        height: 19
+        y: 251
+        width: 15
+        height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,83 +183,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f4ab67ebee6278d0800000000000000
-      internalID: -2850093654693141264
+      spriteID: 67d722b85e720eee0800000000000000
+      internalID: -1233942431064228490
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pavement_2
+      name: sea_5
       rect:
         serializedVersion: 2
-        x: 22
-        y: 224
-        width: 26
-        height: 20
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 70c438a3c62c33e70800000000000000
-      internalID: 9093825842685103111
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: npc_big_1
-      rect:
-        serializedVersion: 2
-        x: 101
-        y: 47
-        width: 22
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 1, y: 1, z: 1, w: 1}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bda391e76fc68bb20800000000000000
-      internalID: 3150387745278999259
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: npc_big_2
-      rect:
-        serializedVersion: 2
-        x: 132
-        y: 48
-        width: 23
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 1, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f428a76667ebf8c20800000000000000
-      internalID: 3210994475073176143
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: npc_big_3
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 48
-        width: 32
-        height: 31
+        x: 34
+        y: 237
+        width: 9
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -324,8 +204,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 564c04494ece574a0800000000000000
-      internalID: -6596105612730252187
+      spriteID: 6ac6d93efc885a2b0800000000000000
+      internalID: -5573898537342767962
       vertices: []
       indices: 
       edges: []
