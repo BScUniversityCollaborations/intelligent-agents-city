@@ -11,7 +11,7 @@ public class move : MonoBehaviour
     int frames = 10;
 
     private int zero = 0 ;
-
+    private float physicVar = 0.5f;
     // Start is called before the first frame update
     void Start(){
         npcBody = GetComponent<Rigidbody2D>();
@@ -26,20 +26,20 @@ public class move : MonoBehaviour
         switch (newDirection){
             case 0:
                 
-                npcBody.velocity = new Vector2(zero, -npcSpeed*0.5f);
-                Thread.Sleep((100 / frames) * 1000);
+                npcBody.velocity = new Vector2(zero, -npcSpeed* physicVar);
+               // Thread.Sleep((100 / frames) * 1000);
                 break;
             case 1:
-               npcBody.velocity = new Vector2(-npcSpeed * 0.5f, zero);
-                Thread.Sleep((100 / frames) * 1000);
+               npcBody.velocity = new Vector2(-npcSpeed * physicVar, zero);
+               // Thread.Sleep((100 / frames) * 1000);
                 break;
             case 2:
-                npcBody.velocity = new Vector2(zero, npcSpeed * 0.5f);
+                npcBody.velocity = new Vector2(zero, npcSpeed * physicVar);
                 Thread.Sleep((100 / frames) * 1000);
                 break;
             case 3:
-                npcBody.velocity = new Vector2(npcSpeed * 0.5f, zero); 
-                Thread.Sleep((100 / frames) * 1000);
+                npcBody.velocity = new Vector2(npcSpeed * physicVar, zero); 
+               // Thread.Sleep((100 / frames) * 1000);
                 break;
             default:
                 npcBody.velocity = Vector2.zero;
