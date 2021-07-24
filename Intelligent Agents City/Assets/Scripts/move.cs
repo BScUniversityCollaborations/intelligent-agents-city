@@ -5,53 +5,24 @@ using UnityEngine;
 
 public class move : MonoBehaviour
 {
-    private Rigidbody2D npcBody;
-    public float npcSpeed;
-    private int walkDirection;
-    int frames = 10;
+    //private Rigidbody2D npcBody;
+ 
+    [SerializeField] private Transform start;
+    [SerializeField] private Transform end;
 
-    private int zero = 0 ;
-    private float physicVar = 0.5f;
     // Start is called before the first frame update
     void Start(){
-        npcBody = GetComponent<Rigidbody2D>();
-        ChooseDirection();
+       // npcBody = GetComponent<Rigidbody2D>();
+        transform.position = start.position;
     }
 
     // Update is called once per frame
     void Update(){
-       int newDirection = ChooseDirection();
-       
-
-        switch (newDirection){
-            case 0:
-                
-                npcBody.velocity = new Vector2(zero, -npcSpeed* physicVar);
-               // Thread.Sleep((100 / frames) * 1000);
-                break;
-            case 1:
-               npcBody.velocity = new Vector2(-npcSpeed * physicVar, zero);
-               // Thread.Sleep((100 / frames) * 1000);
-                break;
-            case 2:
-                npcBody.velocity = new Vector2(zero, npcSpeed * physicVar);
-                Thread.Sleep((100 / frames) * 1000);
-                break;
-            case 3:
-                npcBody.velocity = new Vector2(npcSpeed * physicVar, zero); 
-               // Thread.Sleep((100 / frames) * 1000);
-                break;
-            default:
-                npcBody.velocity = Vector2.zero;
-                Update();
-                break;
-        }
+        transform.position = Vector2.Lerp(transform.position, end.position, Time.deltaTime);
     }
 
-
-    public int ChooseDirection(){
-        walkDirection = Random.Range(0, 4);
-
-        return walkDirection;
+    private void OnDrawGizmos(){
+        Gizmos.DrawCube(start.position, Vector2.one * 0.1f);
+        Gizmos.DrawCube(end.position, Vector2.one * 0.1f);
     }
 }
