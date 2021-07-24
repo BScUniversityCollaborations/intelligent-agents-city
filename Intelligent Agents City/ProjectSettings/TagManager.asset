@@ -8,6 +8,7 @@ TagManager:
   - npcText
   - npcGold
   - npcEnergy
+  - blockNPC
   layers:
   - Default
   - TransparentFX
