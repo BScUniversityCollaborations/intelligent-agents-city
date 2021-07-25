@@ -408,7 +408,7 @@ GameObject:
   - component: {fileID: 10180915}
   - component: {fileID: 10180917}
   m_Layer: 0
-  m_Name: coin1
+  m_Name: Item_Coin_1
   m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10154,7 +10154,7 @@ GameObject:
   - component: {fileID: 278085151}
   - component: {fileID: 278085153}
   m_Layer: 0
-  m_Name: coin1 (9)
+  m_Name: Item_Coin_9
   m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12162,7 +12162,7 @@ GameObject:
   - component: {fileID: 319465482}
   - component: {fileID: 319465481}
   m_Layer: 0
-  m_Name: letter
+  m_Name: Item_Map_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12226,12 +12226,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 319465480}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.0452344, y: -0.07377213, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.1077107, y: 1.8277228, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 2103329175}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &324074520
 GameObject:
@@ -16776,7 +16776,7 @@ GameObject:
   - component: {fileID: 437190828}
   - component: {fileID: 437190827}
   m_Layer: 0
-  m_Name: Item__31 (4)
+  m_Name: Item_EPot_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16840,12 +16840,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 437190826}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.9, y: -2.2, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.8375237, y: -0.29850507, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 927285050}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &437587915
 GameObject:
@@ -16857,7 +16857,7 @@ GameObject:
   m_Component:
   - component: {fileID: 437587916}
   m_Layer: 0
-  m_Name: npc
+  m_Name: NPCs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16874,10 +16874,10 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 962744412}
-  - {fileID: 874615248}
   - {fileID: 600577388}
   - {fileID: 596653562}
+  - {fileID: 962744412}
+  - {fileID: 874615248}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17175,7 +17175,7 @@ GameObject:
   - component: {fileID: 443973953}
   - component: {fileID: 443973956}
   m_Layer: 0
-  m_Name: coin1 (5)
+  m_Name: Item_Coin_5
   m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22455,7 +22455,7 @@ GameObject:
   - component: {fileID: 587602125}
   - component: {fileID: 587602127}
   m_Layer: 0
-  m_Name: coin1 (10)
+  m_Name: Item_Coin_10
   m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22856,7 +22856,7 @@ GameObject:
   - component: {fileID: 596653564}
   - component: {fileID: 596653565}
   m_Layer: 0
-  m_Name: npc_big_2
+  m_Name: NPC_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22925,7 +22925,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 437587916}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &596653563
 MonoBehaviour:
@@ -22992,7 +22992,7 @@ GameObject:
   - component: {fileID: 600577391}
   - component: {fileID: 600577390}
   m_Layer: 0
-  m_Name: npc_big_3
+  m_Name: NPC_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23061,7 +23061,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 437587916}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &600577389
 MonoBehaviour:
@@ -25872,7 +25872,7 @@ GameObject:
   - component: {fileID: 681646921}
   - component: {fileID: 681646920}
   m_Layer: 0
-  m_Name: Item__31 (3)
+  m_Name: Item_EPot_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25936,12 +25936,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 681646919}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: -2.9, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.93752366, y: -0.9985051, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_Father: {fileID: 927285050}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &685205192
 GameObject:
@@ -32148,7 +32148,7 @@ GameObject:
   - component: {fileID: 838237368}
   - component: {fileID: 838237370}
   m_Layer: 0
-  m_Name: coin1 (11)
+  m_Name: Item_Coin_11
   m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34296,7 +34296,7 @@ GameObject:
   - component: {fileID: 874615251}
   - component: {fileID: 874615250}
   m_Layer: 0
-  m_Name: npc_big_1
+  m_Name: NPC_3
   m_TagString: Npc
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34365,7 +34365,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 437587916}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &874615249
 Rigidbody2D:
@@ -36520,6 +36520,48 @@ Transform:
   m_Father: {fileID: 762223414}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &927285049
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 927285050}
+  m_Layer: 0
+  m_Name: Energy Pots
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &927285050
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927285049}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1639923289}
+  - {fileID: 1808705714}
+  - {fileID: 1815682402}
+  - {fileID: 681646921}
+  - {fileID: 437190828}
+  - {fileID: 1644412953}
+  - {fileID: 1016524447}
+  - {fileID: 1785877626}
+  - {fileID: 1070307710}
+  - {fileID: 1786774921}
+  - {fileID: 929620875}
+  - {fileID: 1701596706}
+  m_Father: {fileID: 1008377959}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &928753524
 GameObject:
   m_ObjectHideFlags: 0
@@ -36695,7 +36737,7 @@ GameObject:
   - component: {fileID: 929620875}
   - component: {fileID: 929620874}
   m_Layer: 0
-  m_Name: Item__31 (10)
+  m_Name: Item_EPot_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36759,12 +36801,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 929620873}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.48, y: 2.34, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.5424763, y: 4.241495, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_Father: {fileID: 927285050}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &938328784
 GameObject:
@@ -37572,7 +37614,7 @@ GameObject:
   - component: {fileID: 962744414}
   - component: {fileID: 962744415}
   m_Layer: 0
-  m_Name: npc_2
+  m_Name: NPC_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37641,7 +37683,7 @@ Transform:
   m_LocalScale: {x: 1.8402, y: 1.9902, z: 1}
   m_Children: []
   m_Father: {fileID: 437587916}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &962744413
 MonoBehaviour:
@@ -38949,6 +38991,39 @@ Transform:
   m_Father: {fileID: 1462260417}
   m_RootOrder: 150
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1008377958
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1008377959}
+  m_Layer: 0
+  m_Name: Ground Items
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1008377959
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008377958}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.062476315, y: -1.901495, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 927285050}
+  - {fileID: 2103329175}
+  - {fileID: 1452563651}
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1009363705
 GameObject:
   m_ObjectHideFlags: 0
@@ -39124,7 +39199,7 @@ GameObject:
   - component: {fileID: 1016524447}
   - component: {fileID: 1016524446}
   m_Layer: 0
-  m_Name: Item__31 (6)
+  m_Name: Item_EPot_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39188,12 +39263,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1016524445}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.39, y: 0.86, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.4524763, y: 2.761495, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_Father: {fileID: 927285050}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1018316161
 GameObject:
@@ -41251,7 +41326,7 @@ GameObject:
   - component: {fileID: 1068324893}
   - component: {fileID: 1068324895}
   m_Layer: 0
-  m_Name: coin1 (3)
+  m_Name: Item_Coin_4
   m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41540,7 +41615,7 @@ GameObject:
   - component: {fileID: 1070307710}
   - component: {fileID: 1070307709}
   m_Layer: 0
-  m_Name: Item__31 (8)
+  m_Name: Item_EPot_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41604,12 +41679,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1070307708}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.68, y: -0.01, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.7424765, y: 1.891495, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_Father: {fileID: 927285050}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1070626006
 GameObject:
@@ -43369,7 +43444,7 @@ GameObject:
   - component: {fileID: 1110878755}
   - component: {fileID: 1110878757}
   m_Layer: 0
-  m_Name: coin1 (1)
+  m_Name: Item_Coin_2
   m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44669,7 +44744,7 @@ GameObject:
   - component: {fileID: 1150599332}
   - component: {fileID: 1150599334}
   m_Layer: 0
-  m_Name: coin1 (8)
+  m_Name: Item_Coin_8
   m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46296,7 +46371,7 @@ GameObject:
   - component: {fileID: 1190079488}
   - component: {fileID: 1190079490}
   m_Layer: 0
-  m_Name: coin1 (6)
+  m_Name: Item_Coin_6
   m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47186,7 +47261,7 @@ GameObject:
   - component: {fileID: 1210070375}
   - component: {fileID: 1210070377}
   m_Layer: 0
-  m_Name: coin1 (7)
+  m_Name: Item_Coin_7
   m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50083,7 +50158,7 @@ GameObject:
   - component: {fileID: 1272926808}
   - component: {fileID: 1272926810}
   m_Layer: 0
-  m_Name: coin1 (12)
+  m_Name: Item_Coin_12
   m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50148,7 +50223,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1272926807}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.21, y: -2.34, z: 0}
+  m_LocalPosition: {x: -0.08830001, y: -0.109999895, z: -10.607446}
   m_LocalScale: {x: 1.8325, y: 1.7908, z: 1}
   m_Children: []
   m_Father: {fileID: 1452563651}
@@ -56235,7 +56310,7 @@ GameObject:
   - component: {fileID: 1452563651}
   - component: {fileID: 1452563652}
   m_Layer: 0
-  m_Name: coins
+  m_Name: Coins
   m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56248,8 +56323,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1452563650}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.062476315, y: 1.901495, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 10180916}
@@ -56269,8 +56344,8 @@ Transform:
   - {fileID: 2100285645}
   - {fileID: 1806441092}
   - {fileID: 1841998207}
-  m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_Father: {fileID: 1008377959}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &1452563652
 CircleCollider2D:
@@ -65268,7 +65343,7 @@ GameObject:
   - component: {fileID: 1639923289}
   - component: {fileID: 1639923288}
   m_Layer: 0
-  m_Name: Item__31
+  m_Name: Item_EPot_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -65332,12 +65407,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1639923287}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.062476315, y: -1.901495, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_Father: {fileID: 927285050}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1641714124
 GameObject:
@@ -65432,7 +65507,7 @@ GameObject:
   - component: {fileID: 1644412953}
   - component: {fileID: 1644412952}
   m_Layer: 0
-  m_Name: Item__31 (5)
+  m_Name: Item_EPot_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -65496,12 +65571,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1644412951}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.7, y: 1.01, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.6375238, y: 2.911495, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 927285050}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1645381704
 GameObject:
@@ -65515,7 +65590,7 @@ GameObject:
   - component: {fileID: 1645381705}
   - component: {fileID: 1645381707}
   m_Layer: 0
-  m_Name: coin1 (4)
+  m_Name: Item_Coin_4
   m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -66952,7 +67027,7 @@ GameObject:
   - component: {fileID: 1701596706}
   - component: {fileID: 1701596705}
   m_Layer: 0
-  m_Name: Item__31 (11)
+  m_Name: Item_EPot_12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -67016,12 +67091,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1701596704}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.1, y: 2.57, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.0375237, y: 4.4714947, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_Father: {fileID: 927285050}
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1702754415
 GameObject:
@@ -69896,7 +69971,7 @@ GameObject:
   - component: {fileID: 1785877626}
   - component: {fileID: 1785877625}
   m_Layer: 0
-  m_Name: Item__31 (7)
+  m_Name: Item_EPot_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69960,12 +70035,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1785877624}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.65, y: 0.18, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.7124763, y: 2.081495, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_Father: {fileID: 927285050}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1786774919
 GameObject:
@@ -69978,7 +70053,7 @@ GameObject:
   - component: {fileID: 1786774921}
   - component: {fileID: 1786774920}
   m_Layer: 0
-  m_Name: Item__31 (9)
+  m_Name: Item_EPot_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -70042,12 +70117,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1786774919}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.4, y: 2.55, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.4624765, y: 4.451495, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_Father: {fileID: 927285050}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1787901943
 GameObject:
@@ -71043,7 +71118,7 @@ GameObject:
   - component: {fileID: 1806441091}
   - component: {fileID: 1806441093}
   m_Layer: 0
-  m_Name: coin1 (15)
+  m_Name: Item_Coin_15
   m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71332,7 +71407,7 @@ GameObject:
   - component: {fileID: 1808705714}
   - component: {fileID: 1808705713}
   m_Layer: 0
-  m_Name: Item__31 (1)
+  m_Name: Item_EPot_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71396,12 +71471,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1808705712}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.66, y: -2.71, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.7224765, y: -0.80850506, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 927285050}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1810553862
 GameObject:
@@ -71687,7 +71762,7 @@ GameObject:
   - component: {fileID: 1815682402}
   - component: {fileID: 1815682401}
   m_Layer: 0
-  m_Name: Item__31 (2)
+  m_Name: Item_EPot_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71751,12 +71826,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1815682400}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.67, y: -2.71, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.73247635, y: -0.80850506, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 927285050}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1818965781
 GameObject:
@@ -72831,7 +72906,7 @@ GameObject:
   - component: {fileID: 1841998206}
   - component: {fileID: 1841998208}
   m_Layer: 0
-  m_Name: coin1 (16)
+  m_Name: Item_Coin_16
   m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77618,7 +77693,7 @@ GameObject:
   - component: {fileID: 1969761796}
   - component: {fileID: 1969761795}
   m_Layer: 0
-  m_Name: letter (1)
+  m_Name: Item_Map_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77682,12 +77757,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1969761794}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.75, y: -0.83, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.6875236, y: 1.071495, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_Father: {fileID: 2103329175}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1969989749
 GameObject:
@@ -79744,7 +79819,7 @@ GameObject:
   - component: {fileID: 2025169442}
   - component: {fileID: 2025169444}
   m_Layer: 0
-  m_Name: coin1 (13)
+  m_Name: Item_Coin_13
   m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81396,7 +81471,7 @@ GameObject:
   - component: {fileID: 2074252743}
   - component: {fileID: 2074252745}
   m_Layer: 0
-  m_Name: coin1 (2)
+  m_Name: Item_Coin_3
   m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -82369,7 +82444,7 @@ GameObject:
   - component: {fileID: 2100285644}
   - component: {fileID: 2100285646}
   m_Layer: 0
-  m_Name: coin1 (14)
+  m_Name: Item_Coin_14
   m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -82456,6 +82531,38 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.080000006
+--- !u!1 &2103329174
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2103329175}
+  m_Layer: 0
+  m_Name: Maps
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2103329175
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103329174}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 319465482}
+  - {fileID: 1969761796}
+  m_Father: {fileID: 1008377959}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2107803054
 GameObject:
   m_ObjectHideFlags: 0
