@@ -6,6 +6,8 @@ public class moveRandom : MonoBehaviour
 {
     internal Transform thisTransform;
 
+
+
     // The movement speed of the object
     public float moveSpeed = 0.5f;
 
@@ -20,6 +22,7 @@ public class moveRandom : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+
         // Cache the transform for quicker access
         thisTransform = this.transform;
 
@@ -51,10 +54,18 @@ public class moveRandom : MonoBehaviour
     {
         // Choose whether to move sideways or up/down
         currentMoveDirection = Mathf.FloorToInt(Random.Range(0, moveDirections.Length));
+
     }
 
 
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("coin"))
+        {
+            Destroy(other.gameObject);
+        }
+    }
 
 
 

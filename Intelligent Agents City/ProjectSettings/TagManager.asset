@@ -9,6 +9,7 @@ TagManager:
   - npcGold
   - npcEnergy
   - blockNPC
+  - coin
   layers:
   - Default
   - TransparentFX
