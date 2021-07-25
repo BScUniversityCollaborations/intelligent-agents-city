@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
 
-public class move : MonoBehaviour
+public class Move : MonoBehaviour
 {
     private Rigidbody2D npcBody;
     public RectTransform rectangle;
