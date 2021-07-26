@@ -58,19 +58,6 @@ public class moveRandom : MonoBehaviour
     }
 
 
-
-   /* private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("Coin"))
-        {
-            Destroy(other.gameObject);
-        }
-    }*/
-
-
-
-
-
     /*   private Rigidbody2D npcBody;
        public float npcSpeed = 2;
        private int walkDirection;
