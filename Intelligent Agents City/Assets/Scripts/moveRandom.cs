@@ -59,13 +59,13 @@ public class moveRandom : MonoBehaviour
 
 
 
-    private void OnTriggerEnter2D(Collider2D other)
+   /* private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("coin"))
+        if (other.gameObject.CompareTag("Coin"))
         {
             Destroy(other.gameObject);
         }
-    }
+    }*/
 
 
 

@@ -12,6 +12,11 @@ TagManager:
   - Energy Pot
   - Coin
   - Map
+  - house
+  - Npc1
+  - Npc2
+  - Npc3
+  - Npc4
   layers:
   - Default
   - TransparentFX

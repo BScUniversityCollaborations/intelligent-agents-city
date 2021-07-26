@@ -94,4 +94,47 @@ public class NPC : MonoBehaviour
             GameObject.Destroy(this);
 
     }
+   
+    private void OnTriggerEnter2D(Collider2D other)
+     {
+
+       if (other.gameObject.CompareTag("Coin"))
+       {
+            Destroy(other.gameObject);
+            // Grab this trigger's tag.
+            string tag = gameObject.tag;
+            string npc = gameObject.name;
+            // Compares this object's tag with those below.
+            switch (npc)
+            {
+                case "NPC_1":
+                    // Player related code
+
+                 /*   textMeshProGold = GameObject.Find("Txt_NPC_1_Gold_Value")
+                                        .GetComponent<TextMeshProUGUI>();*/
+                    NpcGold += 1;
+                    textMeshProGold.SetText("Gold: {0}", NpcGold);
+                    break;
+                case "NPC_2":
+                    textMeshProGold = GameObject.Find("Txt_NPC_2_Gold_Value")
+                                        .GetComponent<TextMeshProUGUI>();
+                    NpcGold += 1;
+                    textMeshProGold.SetText("Gold: {0}", NpcGold);
+                    // Wall related code
+                    break;
+                case "NPC_3":
+                    // Door related code
+                    break;
+                case "NPC_4":
+                    // Ceiling related code
+                    break;
+                    // ETC
+            }
+
+
+
+           
+       } 
+    }
+   
 }
