@@ -9,7 +9,9 @@ TagManager:
   - npcGold
   - npcEnergy
   - blockNPC
-  - coin
+  - Energy Pot
+  - Coin
+  - Map
   layers:
   - Default
   - TransparentFX
