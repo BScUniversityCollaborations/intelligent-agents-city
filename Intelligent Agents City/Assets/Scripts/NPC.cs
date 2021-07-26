@@ -101,9 +101,9 @@ public class NPC : MonoBehaviour
        if (other.gameObject.CompareTag("Coin"))
        {
             Destroy(other.gameObject);
-            // Grab this trigger's tag.
+            // Grab this trigger's name.
             string npc = gameObject.name;
-            // Compares this object's tag with those below.
+            // Compares this object's name with those below.
             switch (npc)
             {
                 case "NPC_1":
@@ -128,39 +128,34 @@ public class NPC : MonoBehaviour
         if (other.gameObject.CompareTag("Energy Pot"))
         {
             Destroy(other.gameObject);
-            // Grab this trigger's tag.
+            // Grab this trigger's name.
             string npc = gameObject.name;
-            // Compares this object's tag with those below.
+            // Compares this object's name with those below.
             switch (npc)
             {
                 case "NPC_1":
 
                     npcEnergy += 1 * Time.deltaTime;
 
-                    if (npcEnergy >= 0.0f)
-                        textMeshProEnergy.SetText("Energy: {0}%", (float)Math.Round(npcEnergy * 100f) / 100f);
 
                     break;
                 case "NPC_2":
 
                     npcEnergy += 1 * Time.deltaTime;
 
-                    if (npcEnergy >= 0.0f)
-                        textMeshProEnergy.SetText("Energy: {0}%", (float)Math.Round(npcEnergy * 100f) / 100f);
+                  
                     break;
                 case "NPC_3":
 
                     npcEnergy += 1 * Time.deltaTime;
 
-                    if (npcEnergy >= 0.0f)
-                        textMeshProEnergy.SetText("Energy: {0}%", (float)Math.Round(npcEnergy * 100f) / 100f);
+                 
 
                     break;
                 case "NPC_4":
                     npcEnergy += 1 * Time.deltaTime;
 
-                    if (npcEnergy >= 0.0f)
-                        textMeshProEnergy.SetText("Energy: {0}%", (float)Math.Round(npcEnergy * 100f) / 100f);
+                   
 
                     break;
             }
