@@ -4147,7 +4147,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &157322627
 Transform:
   m_ObjectHideFlags: 0
@@ -8017,7 +8017,7 @@ GameObject:
   - component: {fileID: 231262290}
   - component: {fileID: 231262289}
   m_Layer: 5
-  m_Name: NPC_1_energy
+  m_Name: Txt_NPC_1_Energy_Value
   m_TagString: npcEnergy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8030,17 +8030,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 231262287}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1926989810}
-  m_RootOrder: 9
+  m_Father: {fileID: 555015037}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -208.89998, y: 273.50006}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -141.4, y: 285.5}
+  m_SizeDelta: {x: 223.23, y: 19.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &231262289
 MonoBehaviour:
@@ -12233,6 +12233,37 @@ Transform:
   m_Father: {fileID: 2103329175}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &321695977
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 321695978}
+  m_Layer: 0
+  m_Name: Audio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &321695978
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321695977}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.6717944, y: -3.2274892, z: 362.97122}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 674300323}
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &324074520
 GameObject:
   m_ObjectHideFlags: 0
@@ -15919,6 +15950,44 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.17, y: 0.13}
   m_EdgeRadius: 0
+--- !u!1 &407352167
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 407352168}
+  m_Layer: 5
+  m_Name: Text_NPC_4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &407352168
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407352167}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1833445097}
+  - {fileID: 1923198863}
+  - {fileID: 1963566679}
+  m_Father: {fileID: 1926989810}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &409095743
 GameObject:
   m_ObjectHideFlags: 0
@@ -16876,10 +16945,10 @@ Transform:
   m_Children:
   - {fileID: 600577388}
   - {fileID: 596653562}
-  - {fileID: 962744412}
   - {fileID: 874615248}
+  - {fileID: 962744412}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &439944208
 GameObject:
@@ -18556,7 +18625,7 @@ GameObject:
   - component: {fileID: 473493117}
   - component: {fileID: 473493116}
   m_Layer: 5
-  m_Name: NPC_1
+  m_Name: Txt_NPC_1
   m_TagString: npcText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18569,17 +18638,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 473493114}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1926989810}
+  m_Father: {fileID: 555015037}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -300, y: 275.00006}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -244.28993, y: 276.40997}
+  m_SizeDelta: {x: 199.64, y: 40.485}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &473493116
 MonoBehaviour:
@@ -18664,7 +18733,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 107.87895, w: 0.3564451}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -21160,6 +21229,44 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.17, y: 0.13}
   m_EdgeRadius: 0
+--- !u!1 &555015036
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 555015037}
+  m_Layer: 5
+  m_Name: Text_NPC_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &555015037
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555015036}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 473493115}
+  - {fileID: 231262288}
+  - {fileID: 1931493878}
+  m_Father: {fileID: 1926989810}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &555108815
 GameObject:
   m_ObjectHideFlags: 0
@@ -22855,9 +22962,10 @@ GameObject:
   - component: {fileID: 596653563}
   - component: {fileID: 596653564}
   - component: {fileID: 596653565}
+  - component: {fileID: 596653566}
   m_Layer: 0
   m_Name: NPC_2
-  m_TagString: Untagged
+  m_TagString: Npc
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22978,6 +23086,28 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &596653566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 596653560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a96197b412c09c4d90945f4df4df4c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultGold: 0
+  defaultEnergy: 100
+  defaultExploration: 0
+  defaultEnergyPots: 0
+  textMeshProEnergy: {fileID: 0}
+  textMeshProGold: {fileID: 0}
+  npcGold: 0
+  npcEnergy: 0
+  npcExploration: 0
+  npcEnergyPots: 0
 --- !u!1 &600577386
 GameObject:
   m_ObjectHideFlags: 0
@@ -22991,9 +23121,10 @@ GameObject:
   - component: {fileID: 600577389}
   - component: {fileID: 600577391}
   - component: {fileID: 600577390}
+  - component: {fileID: 600577392}
   m_Layer: 0
   m_Name: NPC_1
-  m_TagString: Untagged
+  m_TagString: Npc
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23114,6 +23245,28 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &600577392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600577386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a96197b412c09c4d90945f4df4df4c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultGold: 0
+  defaultEnergy: 100
+  defaultExploration: 0
+  defaultEnergyPots: 0
+  textMeshProEnergy: {fileID: 0}
+  textMeshProGold: {fileID: 0}
+  npcGold: 0
+  npcEnergy: 0
+  npcExploration: 0
+  npcEnergyPots: 0
 --- !u!1 &600593982
 GameObject:
   m_ObjectHideFlags: 0
@@ -25861,6 +26014,133 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.33, y: 0.18}
   m_EdgeRadius: 0
+--- !u!1 &674300322
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 674300323}
+  - component: {fileID: 674300324}
+  m_Layer: 0
+  m_Name: BackgroundAudio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &674300323
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674300322}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 321695978}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &674300324
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674300322}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 8106c8da6cc993345b0764f46951cab7, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.097
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &681646919
 GameObject:
   m_ObjectHideFlags: 0
@@ -30759,7 +31039,7 @@ GameObject:
   - component: {fileID: 809938075}
   - component: {fileID: 809938074}
   m_Layer: 5
-  m_Name: NPC_2_golds
+  m_Name: Txt_NPC_2_Gold_Value
   m_TagString: npcGold
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30772,17 +31052,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 809938072}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1926989810}
-  m_RootOrder: 6
+  m_Father: {fileID: 1795105066}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -209.60004, y: -305.4}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -148.9, y: -291.4}
+  m_SizeDelta: {x: 215.49, y: 19.08}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &809938074
 MonoBehaviour:
@@ -34295,6 +34575,7 @@ GameObject:
   - component: {fileID: 874615249}
   - component: {fileID: 874615251}
   - component: {fileID: 874615250}
+  - component: {fileID: 874615252}
   m_Layer: 0
   m_Name: NPC_3
   m_TagString: Npc
@@ -34351,7 +34632,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
+  m_MaskInteraction: 2
   m_SpriteSortPoint: 0
 --- !u!4 &874615248
 Transform:
@@ -34365,7 +34646,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 437587916}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &874615249
 Rigidbody2D:
@@ -34418,6 +34699,28 @@ CircleCollider2D:
   m_Offset: {x: 0.005, y: 0}
   serializedVersion: 2
   m_Radius: 0.1
+--- !u!114 &874615252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874615246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a96197b412c09c4d90945f4df4df4c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultGold: 0
+  defaultEnergy: 100
+  defaultExploration: 0
+  defaultEnergyPots: 0
+  textMeshProEnergy: {fileID: 0}
+  textMeshProGold: {fileID: 0}
+  npcGold: 0
+  npcEnergy: 0
+  npcExploration: 0
+  npcEnergyPots: 0
 --- !u!1 &876167750
 GameObject:
   m_ObjectHideFlags: 0
@@ -37610,12 +37913,13 @@ GameObject:
   m_Component:
   - component: {fileID: 962744412}
   - component: {fileID: 962744411}
-  - component: {fileID: 962744413}
-  - component: {fileID: 962744414}
   - component: {fileID: 962744415}
+  - component: {fileID: 962744414}
+  - component: {fileID: 962744413}
+  - component: {fileID: 962744416}
   m_Layer: 0
   m_Name: NPC_4
-  m_TagString: Untagged
+  m_TagString: Npc
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37679,11 +37983,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 962744410}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.43, y: -2.98, z: 0}
+  m_LocalPosition: {x: 2.393, y: -2.761, z: 0}
   m_LocalScale: {x: 1.8402, y: 1.9902, z: 1}
   m_Children: []
   m_Father: {fileID: 437587916}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &962744413
 MonoBehaviour:
@@ -37736,6 +38040,28 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &962744416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962744410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a96197b412c09c4d90945f4df4df4c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultGold: 0
+  defaultEnergy: 100
+  defaultExploration: 0
+  defaultEnergyPots: 0
+  textMeshProEnergy: {fileID: 0}
+  textMeshProGold: {fileID: 0}
+  npcGold: 0
+  npcEnergy: 0
+  npcExploration: 0
+  npcEnergyPots: 0
 --- !u!1 &962879183
 GameObject:
   m_ObjectHideFlags: 0
@@ -39691,7 +40017,7 @@ GameObject:
   - component: {fileID: 1025147968}
   - component: {fileID: 1025147967}
   m_Layer: 5
-  m_Name: NPC_2
+  m_Name: Txt_NPC_2
   m_TagString: npcText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39704,17 +40030,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1025147965}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1926989810}
-  m_RootOrder: 1
+  m_Father: {fileID: 1795105066}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -300, y: -286}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -301.84, y: -281.7}
+  m_SizeDelta: {x: 90.4, y: 38.48}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1025147967
 MonoBehaviour:
@@ -44322,6 +44648,44 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8, y: 1.2}
   m_EdgeRadius: 0
+--- !u!1 &1141453079
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1141453080}
+  m_Layer: 5
+  m_Name: Text_NPC_3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1141453080
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141453079}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1381486259}
+  - {fileID: 2006749069}
+  - {fileID: 1779316736}
+  m_Father: {fileID: 1926989810}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1144128359
 GameObject:
   m_ObjectHideFlags: 0
@@ -52034,7 +52398,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1325723108}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.38412154, y: -0.7479199, z: 0}
+  m_LocalPosition: {x: -0.38412154, y: -0.7479199, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 441984713}
@@ -54565,7 +54929,7 @@ GameObject:
   - component: {fileID: 1381486261}
   - component: {fileID: 1381486260}
   m_Layer: 5
-  m_Name: NPC_3
+  m_Name: Txt_NPC_3
   m_TagString: npcText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -54578,17 +54942,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1381486258}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1926989810}
-  m_RootOrder: 2
+  m_Father: {fileID: 1141453080}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 191, y: 275}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 122.6, y: 277.4}
+  m_SizeDelta: {x: 89.6, y: 40.485}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1381486260
 MonoBehaviour:
@@ -54673,7 +55037,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -0.60347754, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -57329,7 +57693,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1464777617
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -62792,7 +63156,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1566924927}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.991, y: -2.2660003, z: 0}
+  m_LocalPosition: {x: 2.991, y: -2.2660003, z: 1}
   m_LocalScale: {x: 1.2858528, y: 1.1512, z: 1}
   m_Children: []
   m_Father: {fileID: 653467788}
@@ -67560,7 +67924,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1724110209}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.69814754, y: -0.57566166, z: 0}
+  m_LocalPosition: {x: -0.69814754, y: -0.57566166, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 441984713}
@@ -68760,7 +69124,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1751479676}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.679, y: -1.269, z: 0}
+  m_LocalPosition: {x: -0.679, y: -1.269, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 441984713}
@@ -69647,7 +70011,7 @@ GameObject:
   - component: {fileID: 1779316738}
   - component: {fileID: 1779316737}
   m_Layer: 5
-  m_Name: NPC_3_golds
+  m_Name: Txt_NPC_3_Gold_Value
   m_TagString: npcGold
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69660,17 +70024,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1779316735}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1926989810}
-  m_RootOrder: 10
+  m_Father: {fileID: 1141453080}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 280.6, y: 254.2}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 255.56, y: 266.99997}
+  m_SizeDelta: {x: 176.32, y: 19.68}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1779316737
 MonoBehaviour:
@@ -70533,6 +70897,44 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.33, y: 0.18}
   m_EdgeRadius: 0
+--- !u!1 &1795105065
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1795105066}
+  m_Layer: 5
+  m_Name: Text_NPC_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1795105066
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795105065}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1025147966}
+  - {fileID: 2025677815}
+  - {fileID: 809938073}
+  m_Father: {fileID: 1926989810}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1796431248
 GameObject:
   m_ObjectHideFlags: 0
@@ -70558,7 +70960,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1796431248}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0068786144, y: -0.82392013, z: 0}
+  m_LocalPosition: {x: 0.0068786144, y: -0.82392013, z: 1}
   m_LocalScale: {x: 2.483243, y: 2.367476, z: 1}
   m_Children: []
   m_Father: {fileID: 441984713}
@@ -72472,7 +72874,7 @@ GameObject:
   - component: {fileID: 1833445099}
   - component: {fileID: 1833445098}
   m_Layer: 5
-  m_Name: NPC_4
+  m_Name: Txt_NPC_4
   m_TagString: npcText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72485,17 +72887,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1833445096}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1926989810}
-  m_RootOrder: 3
+  m_Father: {fileID: 407352168}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 190.99997, y: -286}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 96.6, y: -281.2}
+  m_SizeDelta: {x: 94, y: 36.78}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1833445098
 MonoBehaviour:
@@ -72728,8 +73130,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1836059095}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.007, y: -1.393, z: 0}
-  m_LocalScale: {x: 2.483243, y: 2.367476, z: 1}
+  m_LocalPosition: {x: 0.007, y: -1.3866, z: 1}
+  m_LocalScale: {x: 2.483243, y: 2.4209812, z: 1}
   m_Children: []
   m_Father: {fileID: 441984713}
   m_RootOrder: 2
@@ -73701,7 +74103,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1868014603}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.39597404, y: -1.0902581, z: 0}
+  m_LocalPosition: {x: -0.39597404, y: -1.0902581, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 441984713}
@@ -75598,11 +76000,11 @@ GameObject:
   - component: {fileID: 1923198865}
   - component: {fileID: 1923198864}
   m_Layer: 5
-  m_Name: NPC_4_energy
+  m_Name: Txt_NPC_4_Energy_Value
   m_TagString: npcEnergy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!224 &1923198863
 RectTransform:
@@ -75611,17 +76013,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1923198862}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1926989810}
-  m_RootOrder: 5
+  m_Father: {fileID: 407352168}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 285, y: -286}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 243.60002, y: -272.11002}
+  m_SizeDelta: {x: 200, y: 18.605}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1923198864
 MonoBehaviour:
@@ -75975,20 +76377,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 473493115}
-  - {fileID: 1025147966}
-  - {fileID: 1381486259}
-  - {fileID: 1833445097}
-  - {fileID: 1963566679}
-  - {fileID: 1923198863}
-  - {fileID: 809938073}
-  - {fileID: 2025677815}
-  - {fileID: 1931493878}
-  - {fileID: 231262288}
-  - {fileID: 1779316736}
-  - {fileID: 2006749069}
+  - {fileID: 555015037}
+  - {fileID: 1795105066}
+  - {fileID: 1141453080}
+  - {fileID: 407352168}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -76114,9 +76508,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1931493878}
   - component: {fileID: 1931493880}
+  - component: {fileID: 1931493881}
   - component: {fileID: 1931493879}
   m_Layer: 5
-  m_Name: NPC_1_golds
+  m_Name: Txt_NPC_1_Gold_Value
   m_TagString: npcGold
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76129,17 +76524,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1931493877}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1926989810}
-  m_RootOrder: 8
+  m_Father: {fileID: 555015037}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -208.9, y: 254.9}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -141.4, y: 266.35995}
+  m_SizeDelta: {x: 223.22, y: 20.39}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1931493879
 MonoBehaviour:
@@ -76238,6 +76633,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1931493877}
   m_CullTransparentMesh: 1
+--- !u!114 &1931493881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931493877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c3131d4419421c489e8388d74c847ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textMeshPro: {fileID: 0}
+  npc: {fileID: 0}
+  defaultValue: 
 --- !u!1 &1932120748
 GameObject:
   m_ObjectHideFlags: 0
@@ -77478,7 +77888,7 @@ GameObject:
   - component: {fileID: 1963566681}
   - component: {fileID: 1963566680}
   m_Layer: 5
-  m_Name: NPC_4_golds
+  m_Name: Txt_NPC_4_Gold_Value
   m_TagString: npcGold
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77491,17 +77901,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1963566678}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1926989810}
-  m_RootOrder: 4
+  m_Father: {fileID: 407352168}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 285, y: -304.6}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 243.60002, y: -290.50003}
+  m_SizeDelta: {x: 200, y: 18.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1963566680
 MonoBehaviour:
@@ -79249,7 +79659,7 @@ GameObject:
   - component: {fileID: 2006749071}
   - component: {fileID: 2006749070}
   m_Layer: 5
-  m_Name: NPC_3_energy
+  m_Name: Txt_NPC_3_Energy_Value
   m_TagString: npcEnergy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79262,17 +79672,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2006749068}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1926989810}
-  m_RootOrder: 11
+  m_Father: {fileID: 1141453080}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 280.60004, y: 272.80005}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 255.56, y: 286.13998}
+  m_SizeDelta: {x: 176.32, y: 18.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2006749070
 MonoBehaviour:
@@ -79918,7 +80328,7 @@ GameObject:
   - component: {fileID: 2025677817}
   - component: {fileID: 2025677816}
   m_Layer: 5
-  m_Name: NPC_2_energy
+  m_Name: Txt_NPC_2_Energy_Value
   m_TagString: npcEnergy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79931,17 +80341,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2025677814}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1926989810}
-  m_RootOrder: 7
+  m_Father: {fileID: 1795105066}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -209.6, y: -286.8}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -148.9, y: -272.56}
+  m_SizeDelta: {x: 215.49, y: 18.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2025677816
 MonoBehaviour:
@@ -83443,7 +83853,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2134939310}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.71, y: -0.918, z: 0}
+  m_LocalPosition: {x: -0.71, y: -0.918, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 441984713}
