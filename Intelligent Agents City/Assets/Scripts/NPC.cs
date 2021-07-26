@@ -102,39 +102,70 @@ public class NPC : MonoBehaviour
        {
             Destroy(other.gameObject);
             // Grab this trigger's tag.
-            string tag = gameObject.tag;
             string npc = gameObject.name;
             // Compares this object's tag with those below.
             switch (npc)
             {
                 case "NPC_1":
-                    // Player related code
-
-                 /*   textMeshProGold = GameObject.Find("Txt_NPC_1_Gold_Value")
-                                        .GetComponent<TextMeshProUGUI>();*/
                     NpcGold += 1;
                     textMeshProGold.SetText("Gold: {0}", NpcGold);
                     break;
-                case "NPC_2":
-                    textMeshProGold = GameObject.Find("Txt_NPC_2_Gold_Value")
-                                        .GetComponent<TextMeshProUGUI>();
+                case "NPC_2": 
                     NpcGold += 1;
-                    textMeshProGold.SetText("Gold: {0}", NpcGold);
-                    // Wall related code
+                    textMeshProGold.SetText("Gold: {0}", NpcGold);   
                     break;
                 case "NPC_3":
-                    // Door related code
+                    NpcGold += 1;
+                    textMeshProGold.SetText("Gold: {0}", NpcGold);
                     break;
                 case "NPC_4":
-                    // Ceiling related code
-                    break;
-                    // ETC
+                    NpcGold += 1;
+                    textMeshProGold.SetText("Gold: {0}", NpcGold); 
+                    break;     
             }
+       }
+
+        if (other.gameObject.CompareTag("Energy Pot"))
+        {
+            Destroy(other.gameObject);
+            // Grab this trigger's tag.
+            string npc = gameObject.name;
+            // Compares this object's tag with those below.
+            switch (npc)
+            {
+                case "NPC_1":
+
+                    npcEnergy += 1 * Time.deltaTime;
+
+                    if (npcEnergy >= 0.0f)
+                        textMeshProEnergy.SetText("Energy: {0}%", (float)Math.Round(npcEnergy * 100f) / 100f);
+
+                    break;
+                case "NPC_2":
+
+                    npcEnergy += 1 * Time.deltaTime;
+
+                    if (npcEnergy >= 0.0f)
+                        textMeshProEnergy.SetText("Energy: {0}%", (float)Math.Round(npcEnergy * 100f) / 100f);
+                    break;
+                case "NPC_3":
+
+                    npcEnergy += 1 * Time.deltaTime;
+
+                    if (npcEnergy >= 0.0f)
+                        textMeshProEnergy.SetText("Energy: {0}%", (float)Math.Round(npcEnergy * 100f) / 100f);
+
+                    break;
+                case "NPC_4":
+                    npcEnergy += 1 * Time.deltaTime;
+
+                    if (npcEnergy >= 0.0f)
+                        textMeshProEnergy.SetText("Energy: {0}%", (float)Math.Round(npcEnergy * 100f) / 100f);
+
+                    break;
+            }
+        }
 
 
-
-           
-       } 
     }
-   
 }
