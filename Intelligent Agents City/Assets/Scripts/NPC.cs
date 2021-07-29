@@ -1,6 +1,8 @@
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class NPC : MonoBehaviour
 {
@@ -9,6 +11,10 @@ public class NPC : MonoBehaviour
     public float defaultEnergy = 10.0f;
     public float defaultExploration = 0.0f;
     public int defaultEnergyPots = 0;
+
+    public int maxEnergy = 1000;
+    public int currentEnergy;
+    public EnergyBar energyBar;
 
     [SerializeField] TextMeshProUGUI textMeshProEnergy;
     [SerializeField] TextMeshProUGUI textMeshProGold;
@@ -42,6 +48,8 @@ public class NPC : MonoBehaviour
         set { npcEnergyPots = value; }
     }
 
+ 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -50,8 +58,11 @@ public class NPC : MonoBehaviour
         npcEnergy = defaultEnergy;
         npcExploration = defaultExploration;
         npcEnergyPots = defaultEnergyPots;
+        currentEnergy = maxEnergy;
+        energyBar.setMaxEnegry(maxEnergy);
         if (name == "NPC_1")
         {
+           
             textMeshProEnergy = GameObject.Find("Txt_NPC_1_Energy_Value")
                                           .GetComponent<TextMeshProUGUI>();
             textMeshProGold = GameObject.Find("Txt_NPC_1_Gold_Value")
@@ -59,6 +70,7 @@ public class NPC : MonoBehaviour
         }
         else if (name == "NPC_2")
         {
+         
             textMeshProEnergy = GameObject.Find("Txt_NPC_2_Energy_Value")
                                           .GetComponent<TextMeshProUGUI>();
             textMeshProGold = GameObject.Find("Txt_NPC_2_Gold_Value")
@@ -84,48 +96,43 @@ public class NPC : MonoBehaviour
     void Update()
     {
 
-        npcEnergy -= 1 * Time.deltaTime;
+        //npcEnergy -= 1 * Time.deltaTime;
 
-        if (npcEnergy >= 0.0f)
-            textMeshProEnergy.SetText("Energy: {0}%", (float)Math.Round(npcEnergy * 100f) / 100f);
-        textMeshProGold.SetText("Gold: {0}", NpcGold);
+        /* if (npcEnergy >= 0.0f)
+             textMeshProEnergy.SetText("Energy: {0}%", (float)Math.Round(npcEnergy * 100f) / 100f);
+         textMeshProGold.SetText("Gold: {0}", NpcGold);
 
-        if (npcEnergy == 0.0f)
+         if (npcEnergy == 0.0f)
+             GameObject.Destroy(this);
+         */
+
+        /*if(currentEnergy >= 0)
+        {
+             TakeEnergy(1);
+        }*/
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            TakeEnergy(20);
+        }
+        
+        /*if (currentEnergy == 0)
+        {
             GameObject.Destroy(this);
+        }*/
 
     }
-   
+
+    void TakeEnergy(int energy)
+    {
+        currentEnergy -= energy;
+        energyBar.setMaxEnegry(currentEnergy);
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
-     {
+    {
 
-       if (other.gameObject.CompareTag("Coin"))
-       {
-            Destroy(other.gameObject);
-            // Grab this trigger's name.
-            string npc = gameObject.name;
-            // Compares this object's name with those below.
-            switch (npc)
-            {
-                case "NPC_1":
-                    NpcGold += 1;
-                    textMeshProGold.SetText("Gold: {0}", NpcGold);
-                    break;
-                case "NPC_2": 
-                    NpcGold += 1;
-                    textMeshProGold.SetText("Gold: {0}", NpcGold);   
-                    break;
-                case "NPC_3":
-                    NpcGold += 1;
-                    textMeshProGold.SetText("Gold: {0}", NpcGold);
-                    break;
-                case "NPC_4":
-                    NpcGold += 1;
-                    textMeshProGold.SetText("Gold: {0}", NpcGold); 
-                    break;     
-            }
-       }
-
-        if (other.gameObject.CompareTag("Energy Pot"))
+        if (other.gameObject.CompareTag("Coin"))
         {
             Destroy(other.gameObject);
             // Grab this trigger's name.
@@ -134,33 +141,63 @@ public class NPC : MonoBehaviour
             switch (npc)
             {
                 case "NPC_1":
-
-                    npcEnergy += 1 * Time.deltaTime;
-
-
+                    NpcGold += 1;
+                    textMeshProGold.SetText("Gold: {0}", NpcGold);
                     break;
                 case "NPC_2":
-
-                    npcEnergy += 1 * Time.deltaTime;
-
-                  
+                    NpcGold += 1;
+                    textMeshProGold.SetText("Gold: {0}", NpcGold);
                     break;
                 case "NPC_3":
-
-                    npcEnergy += 1 * Time.deltaTime;
-
-                 
-
+                    NpcGold += 1;
+                    textMeshProGold.SetText("Gold: {0}", NpcGold);
                     break;
                 case "NPC_4":
-                    npcEnergy += 1 * Time.deltaTime;
-
-                   
-
+                    NpcGold += 1;
+                    textMeshProGold.SetText("Gold: {0}", NpcGold);
                     break;
             }
         }
 
+        /* if (other.gameObject.CompareTag("Energy Pot"))
+         {
+             Destroy(other.gameObject);
+             // Grab this trigger's name.
+             string npc = gameObject.name;
+             // Compares this object's name with those below.
+             switch (npc)
+             {
+                 case "NPC_1":
+
+                     npcEnergy += 1 * Time.deltaTime;
+
+
+                     break;
+                 case "NPC_2":
+
+                     npcEnergy += 1 * Time.deltaTime;
+
+
+                     break;
+                 case "NPC_3":
+
+                     npcEnergy += 1 * Time.deltaTime;
+
+
+
+                     break;
+                 case "NPC_4":
+                     npcEnergy += 1 * Time.deltaTime;
+
+
+
+                     break;
+             }
+         }*/
+
 
     }
+
+    
+
 }
