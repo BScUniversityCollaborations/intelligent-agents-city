@@ -1,8 +1,5 @@
-using System;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
-
 
 public class NPC : MonoBehaviour
 {
@@ -12,9 +9,10 @@ public class NPC : MonoBehaviour
     public float defaultExploration = 0.0f;
     public int defaultEnergyPots = 0;
 
-    public int maxEnergy = 1000;
-    public int currentEnergy;
-    
+    public float maxEnergy = 10000;
+    public float currentEnergy;
+    public EnergyBar energyBar;
+
 
     [SerializeField] TextMeshProUGUI textMeshProEnergy;
     [SerializeField] TextMeshProUGUI textMeshProGold;
@@ -41,21 +39,6 @@ public class NPC : MonoBehaviour
         set { npcExploration = value; }
     }
 
-    [SerializeField] public int npcEnergyPots;
-    public int NpcEnergyPots
-    {
-        get { return npcEnergyPots; }
-        set { npcEnergyPots = value; }
-    }
-
-    [SerializeField] public EnergyBar energyBar;
-    public EnergyBar EnergyBar
-    {
-        get { return energyBar; }
-        //set { npcEnergyPots = value; }
-    }
-
-
     // Start is called before the first frame update
     void Start()
     {
@@ -63,38 +46,34 @@ public class NPC : MonoBehaviour
         npcGold = defaultGold;
         npcEnergy = defaultEnergy;
         npcExploration = defaultExploration;
-        npcEnergyPots = defaultEnergyPots;
-        
+      
+        currentEnergy = maxEnergy;
+        energyBar.setMaxEnegry(maxEnergy);
+
         if (name == "NPC_1")
         {
-           currentEnergy = maxEnergy;
-            energyBar.setMaxEnegry(maxEnergy);
-            textMeshProEnergy = GameObject.Find("Txt_NPC_1_Energy_Value")
-                                          .GetComponent<TextMeshProUGUI>();
+           
             textMeshProGold = GameObject.Find("Txt_NPC_1_Gold_Value")
                                           .GetComponent<TextMeshProUGUI>();
         }
         else if (name == "NPC_2")
         {
          
-            textMeshProEnergy = GameObject.Find("Txt_NPC_2_Energy_Value")
-                                          .GetComponent<TextMeshProUGUI>();
+
             textMeshProGold = GameObject.Find("Txt_NPC_2_Gold_Value")
                                           .GetComponent<TextMeshProUGUI>();
         }
         else if (name == "NPC_3")
         {
-            textMeshProEnergy = GameObject.Find("Txt_NPC_3_Energy_Value")
-                                          .GetComponent<TextMeshProUGUI>();
+         
             textMeshProGold = GameObject.Find("Txt_NPC_3_Gold_Value")
                                           .GetComponent<TextMeshProUGUI>();
         }
         else
         {
-            textMeshProEnergy = GameObject.Find("Txt_NPC_4_Energy_Value")
-                                          .GetComponent<TextMeshProUGUI>();
+           
             textMeshProGold = GameObject.Find("Txt_NPC_4_Gold_Value")
-                                          .GetComponent<TextMeshProUGUI>();
+                                         .GetComponent<TextMeshProUGUI>();
         }
     }
 
@@ -102,37 +81,28 @@ public class NPC : MonoBehaviour
     void Update()
     {
 
-        //npcEnergy -= 1 * Time.deltaTime;
-
-        /* if (npcEnergy >= 0.0f)
-             textMeshProEnergy.SetText("Energy: {0}%", (float)Math.Round(npcEnergy * 100f) / 100f);
-         textMeshProGold.SetText("Gold: {0}", NpcGold);
-
-         if (npcEnergy == 0.0f)
-             GameObject.Destroy(this);
-         */
-
-        /*if(currentEnergy >= 0)
+        if(currentEnergy >= 0)
         {
-             TakeEnergy(1);
-        }*/
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            TakeEnergy(20);
+             TakeEnergy((float)0.01);
         }
         
-        /*if (currentEnergy == 0)
+        if (currentEnergy == 0)
         {
             GameObject.Destroy(this);
-        }*/
+        }
 
     }
 
-    void TakeEnergy(int energy)
+    void TakeEnergy(float energy)
     {
         currentEnergy -= energy;
-        energyBar.setMaxEnegry(currentEnergy);
+        energyBar.SetEnergy(currentEnergy);
+    }
+
+    void GiveEnegry(float energy)
+    {
+        currentEnergy += energy;
+        energyBar.SetEnergy(currentEnergy);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -165,45 +135,20 @@ public class NPC : MonoBehaviour
             }
         }
 
-        /* if (other.gameObject.CompareTag("Energy Pot"))
-         {
-             Destroy(other.gameObject);
-             // Grab this trigger's name.
-             string npc = gameObject.name;
-             // Compares this object's name with those below.
-             switch (npc)
-             {
-                 case "NPC_1":
 
-                     npcEnergy += 1 * Time.deltaTime;
+        if (other.gameObject.CompareTag("Energy Pot"))
+        {
 
+            GiveEnegry(5);
+            Destroy(other.gameObject);
 
-                     break;
-                 case "NPC_2":
-
-                     npcEnergy += 1 * Time.deltaTime;
-
-
-                     break;
-                 case "NPC_3":
-
-                     npcEnergy += 1 * Time.deltaTime;
+        }
 
 
 
-                     break;
-                 case "NPC_4":
-                     npcEnergy += 1 * Time.deltaTime;
 
-
-
-                     break;
-             }
-         }*/
 
 
     }
-
-    
 
 }

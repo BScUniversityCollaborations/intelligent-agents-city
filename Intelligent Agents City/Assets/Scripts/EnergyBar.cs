@@ -4,29 +4,17 @@ using UnityEngine;
 using UnityEngine.UI;
 public class EnergyBar : MonoBehaviour
 {
-    public Slider slider_energy;
-    public Gradient gradient;
+    public Slider slider;
+   
 
-    public void setMaxEnegry(int energy)
+    public void setMaxEnegry(float energy)
     {
-        slider_energy.maxValue = energy;
-        slider_energy.value = energy;
+        slider.maxValue = energy;
+        slider.value = energy;
     }
 
-    public void SetEnergy(int energy)
+    public void SetEnergy(float energy)
     {
-        slider_energy.value = energy;
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        slider.value = energy;
     }
 }
