@@ -14,7 +14,7 @@ public class NPC : MonoBehaviour
 
     public int maxEnergy = 1000;
     public int currentEnergy;
-    public EnergyBar energyBar;
+    
 
     [SerializeField] TextMeshProUGUI textMeshProEnergy;
     [SerializeField] TextMeshProUGUI textMeshProGold;
@@ -48,7 +48,13 @@ public class NPC : MonoBehaviour
         set { npcEnergyPots = value; }
     }
 
- 
+    [SerializeField] public EnergyBar energyBar;
+    public EnergyBar EnergyBar
+    {
+        get { return energyBar; }
+        //set { npcEnergyPots = value; }
+    }
+
 
     // Start is called before the first frame update
     void Start()
@@ -58,11 +64,11 @@ public class NPC : MonoBehaviour
         npcEnergy = defaultEnergy;
         npcExploration = defaultExploration;
         npcEnergyPots = defaultEnergyPots;
-        currentEnergy = maxEnergy;
-        energyBar.setMaxEnegry(maxEnergy);
+        
         if (name == "NPC_1")
         {
-           
+           currentEnergy = maxEnergy;
+            energyBar.setMaxEnegry(maxEnergy);
             textMeshProEnergy = GameObject.Find("Txt_NPC_1_Energy_Value")
                                           .GetComponent<TextMeshProUGUI>();
             textMeshProGold = GameObject.Find("Txt_NPC_1_Gold_Value")
