@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -143,11 +144,6 @@ public class NPC : MonoBehaviour
             Destroy(other.gameObject);
 
         }
-
-
-
-
-
 
     }
 
