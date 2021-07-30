@@ -17411,12 +17411,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 596653560}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3bdce52f50449964898a75de6febf199, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  listOfPosition: []
+  listOfPositions: []
   moveSpeed: 0.2
   decisionTime: {x: 1, y: 4}
 --- !u!58 &596653564
@@ -17578,7 +17578,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bdce52f50449964898a75de6febf199, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  listOfPosition: []
+  listOfPositions: []
   moveSpeed: 0.2
   decisionTime: {x: 1, y: 4}
 --- !u!58 &600577390
@@ -25081,12 +25081,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 874615246}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3bdce52f50449964898a75de6febf199, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  listOfPosition: []
+  listOfPositions: []
   moveSpeed: 0.2
   decisionTime: {x: 1, y: 4}
 --- !u!58 &874615251
@@ -27410,12 +27410,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 962744410}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3bdce52f50449964898a75de6febf199, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  listOfPosition: []
+  listOfPositions: []
   moveSpeed: 0.2
   decisionTime: {x: 1, y: 4}
 --- !u!58 &962744414

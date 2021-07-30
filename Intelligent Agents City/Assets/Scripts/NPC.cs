@@ -14,6 +14,9 @@ public class NPC : MonoBehaviour
     public float currentEnergy;
     public EnergyBar energyBar;
 
+    private SpriteRenderer rend;
+    private Sprite deadSprite, npcSprite;
+
 
     [SerializeField] TextMeshProUGUI textMeshProEnergy;
     [SerializeField] TextMeshProUGUI textMeshProGold;

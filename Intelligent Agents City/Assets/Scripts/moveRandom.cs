@@ -39,30 +39,13 @@ public class moveRandom : MonoBehaviour
     void Update()
     {
 
-
         // Move the object in the chosen direction at the set speed
         thisTransform.position += moveDirections[currentMoveDirection] * Time.deltaTime * moveSpeed;
-
-        foreach (Vector3 position in listOfPositions)
-        {
-            Debug.Log("The position " + position);
-            if (!position.Equals(nextPotision))
-            {
-                Potision();
-                Debug.Log(positions.ToString());
-                listOfPositions.Add(nextPotision);
-                Debug.Log("I AM HERE BO");
-              
-                // return true;
-            }
-
-        }
 
         if (decisionTimeCount > 0) decisionTimeCount -= Time.deltaTime;
         else
         {
-           //Debug.Log("The position" + thisTransform);
-
+          
            // Choose a random time delay for taking a decision ( changing direction, or standing in place for a while )
            decisionTimeCount = Random.Range(decisionTime.x, decisionTime.y);
 
@@ -72,7 +55,6 @@ public class moveRandom : MonoBehaviour
 
         }
     }
-
 
 
     public int ChooseMoveDirection()
@@ -110,8 +92,7 @@ public class moveRandom : MonoBehaviour
                 Debug.Log("THE NEXT LOCATION D " + nextPotision.ToString());
                 break;
         }
-
-       
+ 
     }
 
     void CheckPosition()
