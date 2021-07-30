@@ -17472,9 +17472,11 @@ MonoBehaviour:
   defaultEnergy: 100
   defaultExploration: 0
   defaultEnergyPots: 0
+  isDead: 0
   maxEnergy: 100
   currentEnergy: 0
   energyBar: {fileID: 1523732647}
+  deadSprite: {fileID: 0}
   textMeshProEnergy: {fileID: 0}
   textMeshProGold: {fileID: 0}
   npcGold: 0
@@ -17634,9 +17636,11 @@ MonoBehaviour:
   defaultEnergy: 100
   defaultExploration: 0
   defaultEnergyPots: 0
+  isDead: 0
   maxEnergy: 100
   currentEnergy: 0
   energyBar: {fileID: 459177318}
+  deadSprite: {fileID: -997972493423046422, guid: 64dc686498661e24c9ec5fd68d506953, type: 3}
   textMeshProEnergy: {fileID: 0}
   textMeshProGold: {fileID: 0}
   npcGold: 0
@@ -25121,9 +25125,11 @@ MonoBehaviour:
   defaultEnergy: 100
   defaultExploration: 0
   defaultEnergyPots: 0
+  isDead: 0
   maxEnergy: 100
   currentEnergy: 0
   energyBar: {fileID: 448806059}
+  deadSprite: {fileID: 0}
   textMeshProEnergy: {fileID: 0}
   textMeshProGold: {fileID: 0}
   npcGold: 0
@@ -27471,9 +27477,11 @@ MonoBehaviour:
   defaultEnergy: 100
   defaultExploration: 0
   defaultEnergyPots: 0
+  isDead: 0
   maxEnergy: 100
   currentEnergy: 0
   energyBar: {fileID: 1983220062}
+  deadSprite: {fileID: 0}
   textMeshProEnergy: {fileID: 0}
   textMeshProGold: {fileID: 0}
   npcGold: 0

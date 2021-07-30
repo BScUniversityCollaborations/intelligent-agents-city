@@ -9,13 +9,14 @@ public class NPC : MonoBehaviour
     public float defaultEnergy = 10.0f;
     public float defaultExploration = 0.0f;
     public int defaultEnergyPots = 0;
+    public bool isDead = false;
 
     public float maxEnergy = 10000;
     public float currentEnergy;
     public EnergyBar energyBar;
 
     private SpriteRenderer rend;
-    private Sprite deadSprite, npcSprite;
+    public Sprite deadSprite;
 
 
     [SerializeField] TextMeshProUGUI textMeshProEnergy;
@@ -43,9 +44,13 @@ public class NPC : MonoBehaviour
         set { npcExploration = value; }
     }
 
+  
+
     // Start is called before the first frame update
     void Start()
     {
+        rend = GetComponent<SpriteRenderer>();
+
         // Initialize the variables that will be used by the monsters
         npcGold = defaultGold;
         npcEnergy = defaultEnergy;
@@ -56,16 +61,15 @@ public class NPC : MonoBehaviour
 
         if (name == "NPC_1")
         {
-           
+      
             textMeshProGold = GameObject.Find("Txt_NPC_1_Gold_Value")
                                           .GetComponent<TextMeshProUGUI>();
         }
         else if (name == "NPC_2")
         {
          
-
             textMeshProGold = GameObject.Find("Txt_NPC_2_Gold_Value")
-                                          .GetComponent<TextMeshProUGUI>();
+                                         .GetComponent<TextMeshProUGUI>();
         }
         else if (name == "NPC_3")
         {
@@ -84,15 +88,18 @@ public class NPC : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        textMeshProGold.SetText("Gold: {0}", NpcGold);
 
-        if(currentEnergy >= 0)
+        if (currentEnergy > 0)
         {
              TakeEnergy((float)0.01);
         }
         
         if (currentEnergy == 0)
         {
-            GameObject.Destroy(this);
+            GetComponent <moveRandom> ().enabled = false;
+            rend.sprite = deadSprite;
+            isDead = true;
         }
 
     }
@@ -105,8 +112,11 @@ public class NPC : MonoBehaviour
 
     void GiveEnegry(float energy)
     {
+        
         currentEnergy += energy;
         energyBar.SetEnergy(currentEnergy);
+        
+        
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -142,10 +152,12 @@ public class NPC : MonoBehaviour
 
         if (other.gameObject.CompareTag("Energy Pot"))
         {
-
-            GiveEnegry(5);
-            Destroy(other.gameObject);
-
+            if (NpcGold >= 5)
+            {
+                GiveEnegry(5);
+                Destroy(other.gameObject);
+                NpcGold -= 5;
+            }
         }
 
     }
