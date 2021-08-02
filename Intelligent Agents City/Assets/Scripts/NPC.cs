@@ -94,7 +94,7 @@ public class NPC : MonoBehaviour
              TakeEnergy((float)0.01);
         }
         
-        if (currentEnergy == 0)
+        if (currentEnergy < 0)
         {
             GetComponent <moveRandom> ().enabled = false;
             rend.sprite = deadSprite;

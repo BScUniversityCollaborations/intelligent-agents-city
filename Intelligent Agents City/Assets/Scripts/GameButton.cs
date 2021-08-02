@@ -12,6 +12,8 @@ public class GameButton : MonoBehaviour
       Application.LoadLevel(Application.loadedLevel);
       Time.timeScale = 1;
       isPause = false;
+
+
     }
 
     public void BackToMenu()
@@ -21,15 +23,23 @@ public class GameButton : MonoBehaviour
 
     public void PauseGame()
     {
+       
         if (isPause)
         {
+           
             Time.timeScale = 1;
             isPause = false;
-        }else
+           
+        }
+        else
         {
-          
+           
             Time.timeScale = 0;
             isPause = true;
         }
     }
+
+
+
+
 }
