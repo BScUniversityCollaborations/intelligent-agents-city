@@ -1,11 +1,11 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class EnergyBar : MonoBehaviour
 {
     public Slider slider;
    
-
+    //Τιμές που δίνουμε για τον Slider του npc μας
     public void SetMaxEnergy(float energy)
     {
         slider.maxValue = energy;

@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -58,6 +58,7 @@ public class NPC : MonoBehaviour
         currentEnergy = maxEnergy;
         energyBar.SetMaxEnergy(maxEnergy);
 
+        //αντιστοιχηση txt για coin στους npc Μας
         if (name == "NPC_1")
         {
       
@@ -103,12 +104,14 @@ public class NPC : MonoBehaviour
 
     }
 
+    //Μέθοδος για να αφαιρούμετο energy του Npc μας.
     void TakeEnergy(float energy)
     {
         currentEnergy -= energy;
         energyBar.SetEnergy(currentEnergy);
     }
 
+    //Μέθοδος για να αυξάνουμε το energy του Npc μας.
     void GiveEnegry(float energy)
     {
         
@@ -116,15 +119,20 @@ public class NPC : MonoBehaviour
         energyBar.SetEnergy(currentEnergy);
     }
 
+
+    //Μέθοδος της c# όπου μας βοηθά να βρίσκουμε πότε ένα αντικείμενο ήρθε σε
+    //επαφή με τον Npc μας.
     private void OnTriggerEnter2D(Collider2D other)
     {
-
+        //έλεγχος αν ηρθε σε επαφή με coin
         if (other.gameObject.CompareTag("Coin"))
         {
+            //αν ηρθε τότε το καταστρέφουμε
             Destroy(other.gameObject);
-            // Grab this trigger's name.
+            
             string npc = gameObject.name;
-            // Compares this object's name with those below.
+            
+            //βρισκουμε ποιος npc ήταν Και του προσθέτουμε ένα coin
             switch (npc)
             {
                 case "NPC_1":
@@ -146,7 +154,9 @@ public class NPC : MonoBehaviour
             }
         }
 
-
+        //έλεγχος αν έχει βρει energy Bots αν έχει βρει 
+        // και έχει τουλάχιστον 5 coin του αφαιρούμε αυτά τα 5
+        //και του προσθέτουμε energy
         if (other.gameObject.CompareTag("Energy Pot"))
         {
             if (NpcGold >= 5)
