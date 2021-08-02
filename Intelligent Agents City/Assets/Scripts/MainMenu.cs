@@ -14,6 +14,7 @@ public class MainMenu : MonoBehaviour
     public void PlayAgain()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        Application.LoadLevel(Application.loadedLevel);
     }
 
 

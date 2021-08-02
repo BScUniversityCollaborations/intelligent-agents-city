@@ -7,10 +7,18 @@ using UnityEngine.SceneManagement;
 public class Game : MonoBehaviour
 {   
     List<bool> dead = new List<bool>();
-    [SerializeField] TextMeshProUGUI textWinner;
+
+    [SerializeField] public TextMeshProUGUI textWinner;
+    public TextMeshProUGUI TextWinner
+    {
+        get { return textWinner; }
+        set { textWinner = value; }
+    }
+
+
     private void Start()
     {
-        textWinner = GameObject.Find("NPC_NAME").GetComponent<TextMeshProUGUI>(); ;
+        
     }
     // Update is called once per frame
     void Update()
@@ -30,35 +38,42 @@ public class Game : MonoBehaviour
         if(!isDeadNPC1 && isDeadNPC2 && isDeadNPC3 && isDeadNPC4)
         {
             Time.timeScale = 0;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            textWinner.SetText("NPC1");
+           
             Debug.Log("NPC1 W");
-
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); 
+            textWinner.SetText("NPC1");
         }
 
         if (isDeadNPC1 && !isDeadNPC2 && isDeadNPC3 && isDeadNPC4)
         {
             Time.timeScale = 0;
+          
+            Debug.Log("NPC2 W");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             textWinner.SetText("NPC2");
-            Debug.Log("NPC2 W");
+
         }
 
         if (isDeadNPC1 && isDeadNPC2 && !isDeadNPC3 && isDeadNPC4)
         {
             Time.timeScale = 0;
+            
+            Debug.Log("NPC3 W");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             textWinner.SetText("NPC3");
-            Debug.Log("NPC3 W");
         }
 
         if (isDeadNPC1 && isDeadNPC2 && isDeadNPC3 && !isDeadNPC4)
         {
-            Time.timeScale = 0;
+            Time.timeScale = 0; 
+           
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            textWinner.SetText("NPC4");
-            Debug.Log("NPC4 W");
+            textWinner.SetText("NPC4") ;
+            Debug.Log("NPC4 W");  
+           
         }
+          
+           
 
    
     }
