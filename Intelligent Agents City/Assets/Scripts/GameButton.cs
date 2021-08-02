@@ -27,6 +27,7 @@ public class GameButton : MonoBehaviour
             isPause = false;
         }else
         {
+          
             Time.timeScale = 0;
             isPause = true;
         }
