@@ -1,10 +1,9 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-public class Game : MonoBehaviour
+public class GameOver : MonoBehaviour
 {   
     List<bool> dead = new List<bool>();
 
@@ -16,10 +15,8 @@ public class Game : MonoBehaviour
     }
 
 
-    private void Start()
-    {
-        
-    }
+    private void Start() {}
+
     // Update is called once per frame
     void Update()
     {
@@ -72,10 +69,5 @@ public class Game : MonoBehaviour
             Debug.Log("NPC4 W");  
            
         }
-          
-           
-
-   
     }
-
 }

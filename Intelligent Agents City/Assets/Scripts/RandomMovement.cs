@@ -1,8 +1,7 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class moveRandom : MonoBehaviour
+public class RandomMovement : MonoBehaviour
 {
     internal Transform thisTransform;
     public List<Vector3> listOfPositions = new List<Vector3>();
@@ -52,7 +51,6 @@ public class moveRandom : MonoBehaviour
            //Choose a movement direction, or stay in place
            ChooseMoveDirection();
            //CheckPosition();
-
         }
     }
 
@@ -61,10 +59,12 @@ public class moveRandom : MonoBehaviour
     {
         // Choose whether to move sideways or up/down
         currentMoveDirection = Mathf.FloorToInt(Random.Range(0, moveDirections.Length));
-       /* Debug.Log("THE CURRENT " + currentMoveDirection.ToString());
-        Debug.Log("VECTOR right  " + Vector3.right);
-        Debug.Log("VECTOR up " + Vector3.up);
-        Debug.Log("VECTOR left " + Vector3.left); Debug.Log("VECTOR down " + Vector3.down);*/
+        /* 
+         * Debug.Log("THE CURRENT " + currentMoveDirection.ToString());
+         * Debug.Log("VECTOR right  " + Vector3.right);
+         * Debug.Log("VECTOR up " + Vector3.up);
+         * Debug.Log("VECTOR left " + Vector3.left); Debug.Log("VECTOR down " + Vector3.down);
+        */
         return currentMoveDirection;
     }
 
@@ -100,13 +100,11 @@ public class moveRandom : MonoBehaviour
         Potision();
         foreach (Vector3 position in listOfPositions)
         { 
-            Debug.Log("The position " + position);
+            Debug.Log("Pos: " + position);
             if (!position.Equals(nextPotision))
             {
                 Debug.Log(positions.ToString());
                 listOfPositions.Add(nextPotision);
-                Debug.Log("I AM HERE BO");
-
             }
         }
        

@@ -56,7 +56,7 @@ public class NPC : MonoBehaviour
         npcExploration = defaultExploration;
       
         currentEnergy = maxEnergy;
-        energyBar.setMaxEnegry(maxEnergy);
+        energyBar.SetMaxEnergy(maxEnergy);
 
         if (name == "NPC_1")
         {
@@ -96,7 +96,7 @@ public class NPC : MonoBehaviour
         
         if (currentEnergy < 0)
         {
-            GetComponent <moveRandom> ().enabled = false;
+            GetComponent <RandomMovement>().enabled = false;
             rend.sprite = deadSprite;
             isDead = true;
         }
