@@ -6,7 +6,7 @@ public class NPC : MonoBehaviour
 {
     // Declaring variables for default values
     public int defaultGold = 0;
-    public float defaultEnergy = 10.0f;
+    public float defaultEnergy = 100.0f;
     public float defaultExploration = 0.0f;
     public int defaultEnergyPots = 0;
     public bool isDead = false;
@@ -114,8 +114,6 @@ public class NPC : MonoBehaviour
         
         currentEnergy += energy;
         energyBar.SetEnergy(currentEnergy);
-        
-        
     }
 
     private void OnTriggerEnter2D(Collider2D other)
